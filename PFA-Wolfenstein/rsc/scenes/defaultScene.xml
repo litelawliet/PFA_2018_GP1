@@ -1,0 +1,139 @@
+<Root>
+    <ListGameObject itemCount="7">
+        <GameObject name="player">
+            <Transform>
+                <position x="0" y="0" z="3"/>
+                <rotation x="0" y="0" z="0"/>
+                <scale x="0.0049999999" y="0.0049999999" z="0.0049999999"/>
+            </Transform>
+            <ListComponent>
+                <Component name="ModelComponent">
+                    <Model modelPath="../rsc/models/statue.obj" vertexPath="../rsc/shaders/defaultShader.vert" fragmentPath="../rsc/shaders/defaultShader.frag" texturePath="../rsc/textures/Terracota_Tiles_003_basecolor.png" normalMapPath="../rsc/textures/Terracota_Tiles_003_normal.png"/>
+                </Component>
+                <Component name="PlayerComponent">
+                    <Player health="100" playerState="0"/>
+                </Component>
+                <Component name="ColliderComponent">
+                    <Collider>
+                        <position x="-0.57735026" y="0.57735026" z="0.57735026"/>
+                        <position x="0.57735026" y="0.57735026" z="0.57735026"/>
+                        <position x="0.57735026" y="-0.57735026" z="0.57735026"/>
+                        <position x="-0.57735026" y="-0.57735026" z="0.57735026"/>
+                        <position x="-0.57735026" y="0.57735026" z="-0.57735026"/>
+                        <position x="0.57735026" y="0.57735026" z="-0.57735026"/>
+                        <position x="0.57735026" y="-0.57735026" z="-0.57735026"/>
+                        <position x="-0.57735026" y="-0.57735026" z="-0.57735026"/>
+                    </Collider>
+                </Component>
+                <Component name="LightComponent">
+                    <Light>
+                        <position x="0" y="0" z="0"/>
+                        <color x="1" y="1" z="1"/>
+                        <direction x="-0.57735026" y="-0.57735026" z="-0.57735026"/>
+                        <type type="1"/>
+                        <constant constant="1"/>
+                        <linear linear="0.5"/>
+                        <quadratic quadratic="0.2"/>
+                        <cutoff cutoff="0"/>
+                        <intensity intensity="1"/>
+                    </Light>
+                </Component>
+            </ListComponent>
+        </GameObject>
+        <GameObject name="monkey">
+            <Transform>
+                <position x="2" y="1" z="0"/>
+                <rotation x="0" y="0" z="0"/>
+                <scale x="0.0049999999" y="0.0049999999" z="0.0049999999"/>
+            </Transform>
+            <ListComponent>
+                <Component name="ModelComponent">
+                    <Model modelPath="../rsc/models/monkey.fbx" vertexPath="../rsc/shaders/defaultShader.vert" fragmentPath="../rsc/shaders/defaultShader.frag" texturePath="" normalMapPath=""/>
+                </Component>
+                <Component name="LightComponent">
+                    <Light>
+                        <position x="0" y="0" z="0"/>
+                        <color x="0" y="1" z="0"/>
+                        <direction x="0.57735026" y="0.57735026" z="0.57735026"/>
+                        <type type="2"/>
+                        <constant constant="1"/>
+                        <linear linear="0.5"/>
+                        <quadratic quadratic="0.2"/>
+                        <cutoff cutoff="0"/>
+                        <intensity intensity="0.1"/>
+                    </Light>
+                </Component>
+            </ListComponent>
+        </GameObject>
+        <GameObject name="weapon">
+            <Transform>
+                <position x="0.1" y="-0.050000001" z="2.7"/>
+                <rotation x="0" y="90" z="0"/>
+                <scale x="0.050000001" y="0.050000001" z="0.050000001"/>
+            </Transform>
+            <ListComponent>
+                <Component name="ModelComponent">
+                    <Model modelPath="../rsc/models/Handgun_obj.obj" vertexPath="../rsc/shaders/defaultShader.vert" fragmentPath="../rsc/shaders/defaultShader.frag" texturePath="" normalMapPath=""/>
+                </Component>
+            </ListComponent>
+        </GameObject>
+        <GameObject name="car">
+            <Transform>
+                <position x="1" y="0" z="0"/>
+                <rotation x="0" y="0" z="36"/>
+                <scale x="0.0049999999" y="0.0049999999" z="0.0049999999"/>
+            </Transform>
+            <ListComponent>
+                <Component name="ModelComponent">
+                    <Model modelPath="../rsc/models/standard_car.fbx" vertexPath="../rsc/shaders/defaultShader.vert" fragmentPath="../rsc/shaders/defaultShader.frag" texturePath="../rsc/textures/Tiles_026_basecolor.png" normalMapPath="../rsc/textures/Tiles_026_normal.png"/>
+                </Component>
+            </ListComponent>
+        </GameObject>
+        <GameObject name="buildings">
+            <Transform>
+                <position x="-5" y="0" z="-2"/>
+                <rotation x="0" y="0" z="0"/>
+                <scale x="0.0049999999" y="0.0049999999" z="0.0049999999"/>
+            </Transform>
+            <ListComponent>
+                <Component name="ModelComponent">
+                    <Model modelPath="../rsc/models/buildings.fbx" vertexPath="../rsc/shaders/defaultShader.vert" fragmentPath="../rsc/shaders/defaultShader.frag" texturePath="../rsc/textures/Tiles_026_basecolor.png" normalMapPath="../rsc/textures/Tiles_026_normal.png"/>
+                </Component>
+            </ListComponent>
+        </GameObject>
+        <GameObject name="room">
+            <Transform>
+                <position x="5" y="-0" z="2.7"/>
+                <rotation x="0" y="0" z="0"/>
+                <scale x="0.001" y="0.001" z="0.001"/>
+            </Transform>
+            <ListComponent>
+                <Component name="ModelComponent">
+                    <Model modelPath="../rsc/models/cottage_fbx.fbx" vertexPath="../rsc/shaders/defaultShader.vert" fragmentPath="../rsc/shaders/defaultShader.frag" texturePath="../rsc/textures/Terracota_Tiles_003_basecolor.png" normalMapPath="../rsc/textures/cottage_normal.png"/>
+                </Component>
+            </ListComponent>
+        </GameObject>
+        <GameObject name="buildingsLight">
+            <Transform>
+                <position x="-5" y="-0" z="0"/>
+                <rotation x="0" y="0" z="0"/>
+                <scale x="1" y="1" z="1"/>
+            </Transform>
+            <ListComponent>
+                <Component name="LightComponent">
+                    <Light>
+                        <position x="0" y="0" z="0"/>
+                        <color x="1" y="0" z="0"/>
+                        <direction x="-0.57735026" y="-0.57735026" z="-0.57735026"/>
+                        <type type="2"/>
+                        <constant constant="1"/>
+                        <linear linear="0.5"/>
+                        <quadratic quadratic="0.2"/>
+                        <cutoff cutoff="0"/>
+                        <intensity intensity="1"/>
+                    </Light>
+                </Component>
+            </ListComponent>
+        </GameObject>
+    </ListGameObject>
+</Root>
