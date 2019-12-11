@@ -73,32 +73,32 @@
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\bin\</OutDir>
     <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetExt>.dll</TargetExt>
-    <IncludePath>$(SolutionDir)Dependencies\assimp\include;$(SolutionDir)Dependencies\glew\include;$(SolutionDir)Dependencies\glfw\include\$(Platform);$(SolutionDir)Dependencies\glm\include;$(SolutionDir)Dependencies\stb;$(SolutionDir)Rendering\include;$(ProjectDir)include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Dependencies\glfw\lib\$(Platform);$(SolutionDir)Dependencies\assimp\lib\$(Configuration)\$(Platform);$(SolutionDir)Dependencies\glew\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Dependencies\assimp5\include;$(SolutionDir)Dependencies\glew\include;$(SolutionDir)Dependencies\glfw\include\$(Platform);$(SolutionDir)Dependencies\glm\include;$(SolutionDir)Dependencies\stb;$(SolutionDir)Rendering\include;$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\glfw\lib\$(Platform);$(SolutionDir)Dependencies\assimp5\lib\$(Platform)\$(Configuration);$(SolutionDir)Dependencies\glew\lib\$(Platform);$(LibraryPath)</LibraryPath>
     <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\bin\</OutDir>
     <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetExt>.dll</TargetExt>
-    <IncludePath>$(SolutionDir)Dependencies\assimp\include;$(SolutionDir)Dependencies\glew\include;$(SolutionDir)Dependencies\glfw\include\$(Platform);$(SolutionDir)Dependencies\glm\include;$(SolutionDir)Dependencies\stb;$(SolutionDir)Rendering\include;$(ProjectDir)include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Dependencies\glfw\lib\$(Platform);$(SolutionDir)Dependencies\assimp\lib\$(Configuration)\$(Platform);$(SolutionDir)Dependencies\glew\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Dependencies\assimp5\include;$(SolutionDir)Dependencies\glew\include;$(SolutionDir)Dependencies\glfw\include\$(Platform);$(SolutionDir)Dependencies\glm\include;$(SolutionDir)Dependencies\stb;$(SolutionDir)Rendering\include;$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\glfw\lib\$(Platform);$(SolutionDir)Dependencies\assimp5\lib\$(Platform)\$(Configuration);$(SolutionDir)Dependencies\glew\lib\$(Platform);$(LibraryPath)</LibraryPath>
     <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\bin\</OutDir>
     <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetExt>.dll</TargetExt>
-    <IncludePath>$(SolutionDir)Dependencies\assimp\include;$(SolutionDir)Dependencies\glew\include;$(SolutionDir)Dependencies\glfw\include\$(Platform);$(SolutionDir)Dependencies\glm\include;$(SolutionDir)Dependencies\stb;$(SolutionDir)Rendering\include;$(ProjectDir)include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Dependencies\glfw\lib\$(Platform);$(SolutionDir)Dependencies\assimp\lib\$(Configuration)\$(Platform);$(SolutionDir)Dependencies\glew\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Dependencies\assimp5\include;$(SolutionDir)Dependencies\glew\include;$(SolutionDir)Dependencies\glfw\include\$(Platform);$(SolutionDir)Dependencies\glm\include;$(SolutionDir)Dependencies\stb;$(SolutionDir)Rendering\include;$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\glfw\lib\$(Platform);$(SolutionDir)Dependencies\assimp5\lib\$(Platform)\$(Configuration);$(SolutionDir)Dependencies\glew\lib\$(Platform);$(LibraryPath)</LibraryPath>
     <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\bin\</OutDir>
     <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetExt>.dll</TargetExt>
-    <IncludePath>$(SolutionDir)Dependencies\assimp\include;$(SolutionDir)Dependencies\glew\include;$(SolutionDir)Dependencies\glfw\include\$(Platform);$(SolutionDir)Dependencies\glm\include;$(SolutionDir)Dependencies\stb;$(SolutionDir)Rendering\include;$(ProjectDir)include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Dependencies\glfw\lib\$(Platform);$(SolutionDir)Dependencies\assimp\lib\$(Configuration)\$(Platform);$(SolutionDir)Dependencies\glew\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Dependencies\assimp5\include;$(SolutionDir)Dependencies\glew\include;$(SolutionDir)Dependencies\glfw\include\$(Platform);$(SolutionDir)Dependencies\glm\include;$(SolutionDir)Dependencies\stb;$(SolutionDir)Rendering\include;$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\glfw\lib\$(Platform);$(SolutionDir)Dependencies\assimp5\lib\$(Platform)\$(Configuration);$(SolutionDir)Dependencies\glew\lib\$(Platform);$(LibraryPath)</LibraryPath>
     <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -115,7 +115,7 @@
       <Command>copy "$(SolutionDir)Dependencies\glfw\bin\$(Platform)\glfw3.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>glfw3dll.lib;glew32.lib;opengl32.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3dll.lib;glew32.lib;opengl32.lib;assimp-vc142-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -134,7 +134,7 @@
       <Command>copy "$(SolutionDir)Dependencies\glfw\bin\$(Platform)\glfw3.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>glfw3dll.lib;glew32.lib;opengl32.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3dll.lib;glew32.lib;opengl32.lib;assimp-vc142-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -154,7 +154,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>glfw3dll.lib;glew32.lib;opengl32.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3dll.lib;glew32.lib;opengl32.lib;assimp-vc142-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -177,7 +177,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>glfw3dll.lib;glew32.lib;opengl32.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3dll.lib;glew32.lib;opengl32.lib;assimp-vc142-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
     </Link>
